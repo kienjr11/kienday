@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+.container{
+    display: grid;
+    color: aliceblue;
+    grid-template-areas:
+    "a a a a a a"
+    "b c c c c d"
+    "e e e e e e";
+    row-gap: 5px;
+}
+.a{background-color:darkgray;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    align-content: center;}
+.b{background-color:goldenrod;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    align-content: center;}
+.c{background-color:palevioletred;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    grid-area: c;}
+.ab{
+    grid-area: a;
+}
+.ba{
+    grid-area: b;
+    
+}
+.bb{
+    grid-area: d;
+}
+.ac{ grid-area: e;}
+
+
+    </style>
+     <a class="bai" href="bai1.html" target="_self">bài 1</a>
+     <a class="bai" href="bai2.html" target="_self">bài 2</a>
+     <a class="bai" href="bai3.html" target="_self">bài 3</a>
+     <a class="bai" href="bai4.html" target="_self">bài 4</a>
+     <a class="bai" href="bai5.html" target="_self">bài 5</a>
+     <a class="bai" href="bai6.html" target="_self">bài 6</a>
+     <a class="bai" href="bai7.html" target="_self">bài 7</a>
+     <a class="bai" href="bai8.html" target="_self">bài 8</a>
+     <a class="bai" href="bai9.html" target="_self">bài 9</a>
+     <a class="bai" href="bai10.html" target="_self">bài 10</a>
+    <div class="container">
+        <div class="a ab">Header</div>
+        <div class="b ba">Sidebar</div>
+        <div class="c">Content</div>
+        <div class="b bb">aside</div>
+        <div class="a ac">footer</div>
+    </div>
+</body>
+</html>
